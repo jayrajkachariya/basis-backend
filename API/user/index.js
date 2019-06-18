@@ -21,8 +21,8 @@ router.post('/login', login);
 // @@ read operation via GET
 router.get('/fetch-user', isAuthenticated(), getUserData);
 
-// @@ update operations via PUT
-router.put('/update-user', isAuthenticated(), updateUserData);
-router.put('/update-password', isAuthenticated(), changePassword);
+// @@ update operations via PATCH
+router.patch('/update-user', isAuthenticated(), updateUserData);
+router.patch('/update-password', isAuthenticated(), changePassword);
 
 module.exports = router;
