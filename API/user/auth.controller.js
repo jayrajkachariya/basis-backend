@@ -69,7 +69,8 @@ exports.signUp = async (req, res) => {
                 success: true,
                 token: token,
                 user: {
-                    name: `${_user.firstName}${_user.lastName ? ' ' + _user.lastName : ''}`,
+                    firstName: _user.firstName,
+                    lastName: _user.lastName ? _user.lastName : '',
                     email: _user.email,
                     contactNumber: _user.contactNumber,
                 }
