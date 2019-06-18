@@ -1,0 +1,2 @@
+[2019-06-18T10:07:34.112] [INFO] production - Listening on port 5001
+[2019-06-18T10:07:35.759] [INFO] production - Server connected to DB mongodb://tester0:tester0@ds139427.mlab.com:39427/user-prototype-for-basis
