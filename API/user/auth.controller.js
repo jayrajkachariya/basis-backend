@@ -163,7 +163,7 @@ exports.updateUserData = async (req, res) => {
             res.json({
                 success: true,
                 message: 'User data updated!',
-                user: _user
+                user: _.pick(_user, 'firstName', 'lastName', 'email', 'contactNumber'),
             });
         } else {
             throw new Error('Filed to change user data, Please try again!')
